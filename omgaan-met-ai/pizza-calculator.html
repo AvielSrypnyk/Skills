@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizza-calculator.css">
+    <title>Pizza Calculator</title>
+</head>
+<body>
+    <h1>Pizza Calculator</h1>
+    <!-- Knoppen -->
+    <form id="pizzaForm">
+        <label for="small">Small Pizza (10" diameter):</label>
+        <input type="number" id="small" name="small" min="0">
+        <br>
+        <label for="medium">Medium Pizza (12" diameter):</label>
+        <input type="number" id="medium" name="medium" min="0">
+        <br>
+        <label for="large">Large Pizza (14" diameter):</label>
+        <input type="number" id="large" name="large" min="0">
+        <br>
+        <button type="button" onclick="calculatePizzaPrice()">Bereken</button>
+    </form>
+
+    <div id="orderSummary" style="display: none;">
+        <h2>Uw Bestelling</h2>
+        <p id="smallOrder"></p>
+        <p id="mediumOrder"></p>
+        <p id="largeOrder"></p>
+        <p id="totalOrder"></p>
+    </div>
+
+    <footer>
+        &copy; Aviel
+    </footer>
+
+    <script src="pizza-calculator.js"></script>
+</body>
+</html>

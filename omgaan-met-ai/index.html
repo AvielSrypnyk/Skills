@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welkom bij [Café-Bar Naam]</h1>
+    <div id="output"></div>
+  
+    <form id="order-form">
+      <label for="order-type">Wat wilt u bestellen?</label>
+      <select id="order-type">
+        <option value="drank">Drank</option>
+        <option value="snack">Snack</option>
+      </select>
+  
+      <div id="drinks-form" style="display: none;">
+        <label for="drink-type">Kies een drankje:</label>
+        <select id="drink-type">
+          <option value="fris">Fris</option>
+          <option value="bier">Bier</option>
+          <option value="wijn">Wijn</option>
+        </select>
+  
+        <label for="drink-quantity">Hoeveelheid:</label>
+        <input type="number" id="drink-quantity" min="1" value="1">
+      </div>
+  
+      <div id="snacks-form" style="display: none;">
+        <label for="snack-type">Kies een snack:</label>
+        <select id="snack-type">
+          <option value="frikandel">Frikandel</option>
+          <option value="bitterballen8">Bitterballen (8 stuks)</option>
+          <option value="bitterballen16">Bitterballen (16 stuks)</option>
+          <option value="pizza">Pizza</option>
+        </select>
+  
+        <label for="snack-quantity">Hoeveelheid:</label>
+        <input type="number" id="snack-quantity" min="1" value="1">
+      </div>
+  
+      <button type="submit">Voeg toe aan bestelling</button>
+    </form>
+  
+    <button onclick="showBill()">Toon de rekening</button>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

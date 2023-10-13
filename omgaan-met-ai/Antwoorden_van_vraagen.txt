@@ -1,0 +1,49 @@
+
+
+1. **Prijs van de pizza's:**
+Welk stuk code is verrantwoordelijk voor de prijzen van de pizza’s?  
+ De prijzen van de pizza's worden gedefinieerd in de JavaScript-functie. Hier is het relevante stuk code:
+   
+   ```javascript
+   const smallPrice = 5.99;
+   const mediumPrice = 7.99;
+   const largePrice = 9.99;
+   ```
+   
+Welk stuk code is verrantwoordelijk voor het optellen van alle pizza’s?
+2. **Optellen van alle pizza's:**
+   Het optellen van de totale kosten van alle bestelde pizza's wordt gedaan in deze regel:
+   
+   ```javascript
+   const totalOrder = smallTotal + mediumTotal + largeTotal;
+   ```
+Welk stuk code is verrantwoordelijk voor het uitlezen van de ingevoerde aantallen?
+3. **Uitlezen van de ingevoerde aantallen:**
+   Het uitlezen van de ingevoerde aantallen gebeurt met behulp van deze regels:
+   
+   ```javascript
+   const smallCount = parseInt(document.getElementById('small').value) || 0;
+   const mediumCount = parseInt(document.getElementById('medium').value) || 0;
+   const largeCount = parseInt(document.getElementById('large').value) || 0;
+   ```
+
+Welk stuk code is verrantwoordelijk voor het starten van de berekeningen?
+4. **Starten van de berekeningen:**
+   De functie die de berekeningen initieert, wordt aangeroepen wanneer de gebruiker op de "Bereken" knop klikt. In dit geval wordt de functie `calculatePizzaPrice()` aangeroepen via de `onclick`-attribuut van de knop in het HTML-formulier.
+
+   ```html
+   <button type="button" onclick="calculatePizzaPrice()">Bereken</button>
+   ```
+
+Welk stuk code is verrantwoordelijk voor het tonen van de totalen?
+5. **Tonen van de totalen:**
+   Het tonen van de totalen gebeurt in de JavaScript-functie `calculatePizzaPrice()`. Hier is het relevante stuk code:
+   
+   ```javascript
+   document.getElementById('smallOrder').innerText = `Small Pizza (${smallCount}): $${smallTotal.toFixed(2)}`;
+   document.getElementById('mediumOrder').innerText = `Medium Pizza (${mediumCount}): $${mediumTotal.toFixed(2)}`;
+   document.getElementById('largeOrder').innerText = `Large Pizza (${largeCount}): $${largeTotal.toFixed(2)}`;
+   document.getElementById('totalOrder').innerText = `Totaal: $${totalOrder.toFixed(2)}`;
+   document.getElementById('orderSummary').style.display = 'block';
+   ```
+

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #output {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+  }
+  
+  #order-form {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+  }
+  
+  label, select, input {
+    display: block;
+    margin: 10px;
+  }
+  
+  #drinks-form, #snacks-form {
+    display: none;
+  }
+  
+  #order-type {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  #drink-type, #snack-type {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  #drink-quantity, #snack-quantity {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  
+  
+  

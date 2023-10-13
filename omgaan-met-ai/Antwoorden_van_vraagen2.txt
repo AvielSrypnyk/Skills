@@ -1,0 +1,17 @@
+
+
+1. **Verantwoordelijk voor het optellen van alle prijzen**:
+   - Het stuk code dat verantwoordelijk is voor het optellen van alle prijzen staat in de `showBill`-functie. Hier worden de prijzen van drankjes en snacks opgeteld om de totaalprijs te berekenen. Het totaal wordt bijgehouden in de variabele `totalBill`.
+
+2. **Verantwoordelijk voor het uitlezen van de ingevoerde aantallen**:
+   - Het uitlezen van de ingevoerde aantallen vindt plaats in de `addOrder`-functie. Afhankelijk van het type bestelling (drank of snack) en het geselecteerde item, wordt het aantal gelezen met behulp van `document.getElementById` en vervolgens verwerkt om de bestelling aan de `orders`-variabele toe te voegen.
+
+3. **Verantwoordelijk voor het starten van de berekeningen**:
+   - Het starten van de berekeningen begint wanneer een gebruiker op de knop "Voeg toe aan bestelling" klikt. Dit gebeurt door een eventlistener die is ingesteld op het formulier met id "order-form." Als het formulier wordt ingediend, wordt de functie `addOrder` aangeroepen om de berekeningen te starten.
+
+4. **Verantwoordelijk voor het tonen van de totalen**:
+   - Het tonen van de totalen wordt uitgevoerd in de `showBill`-functie. Hier worden de totaalprijzen van drankjes en snacks berekend, en de resulterende rekening wordt getoond in het HTML-element met id "output."
+
+5. **Verantwoordelijk voor de snacks**:
+   - Het deel van de code dat verantwoordelijk is voor het verwerken van snacks bevindt zich in de `addOrder`-functie. Hier wordt gecontroleerd of het geselecteerde item een snack is (bijvoorbeeld "frikandel," "bitterballen," of "pizza"). De code voor snacks behandelt specifieke logica, zoals het aantal en de prijs van de snacks, op basis van de gebruikersinvoer.
+

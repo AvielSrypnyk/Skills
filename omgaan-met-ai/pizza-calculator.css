@@ -1,0 +1,63 @@
+/* Set font family, background color, and text alignment */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ff6600;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#orderSummary {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+footer {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  
+  footer a {
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
