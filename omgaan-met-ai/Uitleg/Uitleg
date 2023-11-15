@@ -1,0 +1,31 @@
+
+Het is eerste opdracht
+ De prijzen van de pizza's worden vastgesteld met de regels waarin de prijzen als volgt worden gedefinieerd: "smallPrice" voor kleine pizza's, "mediumPrice" voor middelgrote pizza's en "largePrice" voor grote pizza's.
+
+ Het totaalbedrag van de bestelling wordt berekend door de prijs van elk type pizza te vermenigvuldigen met het aantal dat is ingevoerd en deze subtotalen vervolgens op te tellen om het totaalbedrag van de bestelling te krijgen.
+
+ De aantallen van elk type pizza worden uitgelezen uit de ingevoerde waarden in de HTML-elementen met de ID's 'small', 'medium' en 'large'.
+
+ De berekeningen worden gestart wanneer de functie "calculatePizzaPrice()" wordt aangeroepen, en dit kan worden geactiveerd door bijvoorbeeld op een knop te klikken.
+
+ Het tonen van de totale bestelling en de bestelspecificaties gebeurt door de waarden bij te werken in de bijbehorende HTML-elementen, zoals de tekst die de bestelling beschrijft en het totaalbedrag. Het element met ID 'orderSummary' wordt ook getoond door de weergave-instelling aan te passen naar 'block'.
+
+
+Hier zijn de antwoorden op je vragen met betrekking tot de code voor de Horeca App:
+
+1. Verantwoordelijk voor het optellen van alle prijzen:
+   Het stuk code dat verantwoordelijk is voor het optellen van alle prijzen bevindt zich in de functie showBill(). Deze functie loopt door de bestellingen voor zowel drankjes als snacks en berekent de totaalprijs door de prijs per eenheid te vermenigvuldigen met de hoeveelheid en deze totalen op te tellen voor zowel drankjes als snacks.
+
+2. Verantwoordelijk voor het uitlezen van de ingevoerde aantallen:
+   Het stuk code dat verantwoordelijk is voor het uitlezen van de ingevoerde aantallen bevindt zich in de functie addOrder(). Deze functie haalt de geselecteerde drank of snack en het ingevoerde aantal op uit de HTML-formulierelementen.
+
+3. Verantwoordelijk voor het starten van de berekeningen:
+   Het stuk code dat verantwoordelijk is voor het starten van de berekeningen bevindt zich in de event listener die is toegevoegd aan het formulier met de ID 'order-form'. Wanneer het formulier wordt ingediend, wordt de functie addOrder() aangeroepen om de bestelling toe te voegen en daarna wordt het formulier gereset.
+
+4. Verantwoordelijk voor het tonen van de totalen:
+   Het stuk code dat verantwoordelijk is voor het tonen van de totalen bevindt zich ook in de functie showBill(). Deze functie genereert een tekst die de volledige rekening voor drankjes en snacks bevat en toont deze tekst in een HTML-element met de ID 'output'.
+
+5. Verantwoordelijk voor de snacks:
+   Het stuk code dat verantwoordelijk is voor het verwerken van snacks bevindt zich in de functie addOrder(). Deze functie controleert welke snack is geselecteerd (bijv. "pizza" of "bitterballen") en verwerkt de bestelling op basis van de geselecteerde snack. De prijzen van snacks zijn gedefinieerd in het object "snacks".
+
+
